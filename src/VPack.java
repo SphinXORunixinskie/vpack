@@ -23,13 +23,20 @@ public class VPack {
         // Test/debug suite.
         if ( m == 1 ) {
             return;
-        }
-        if ( m == 0 ) {
+        } else if ( m == 0 ) {
+            // Test suite one.
             // Create test package.
             Package dummy = new Package("Dummy", "None", 0.1, true, "None");
             Package.getPackageInformation("output");
+        } else if ( m == 2 ) {
+            // Second test suite.
+        } else {
+            return;
         }
     }
+
+    /* TODO:Test method 2 -- PROTOTYPE -- */
+    static void U2(int m) {}
 
     static void __init__(String welcomeMessage) {
         System.out.println(welcomeMessage);
